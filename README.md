@@ -8,7 +8,7 @@
 
 ### 全局配置：
 
-* [QuantumultX.conf](https://raw.githubusercontent.com/KuGouGo/Ice/Monster/QuantumultX.conf)
+* [QuantumultX.conf](https://raw.githubusercontent.com/KuGouGo/Ice-Boom/master/QuantumultX.conf)
 
 
 ### 本地配置：
@@ -16,15 +16,15 @@
 * 建立本地文件夹
 目录 iCloud Drive/QuantumultX/Scripts/KuGouGo 或者 我的iPhone/QuantumultX/Scripts/KuGouGo
 
-* WoringCopy挂载我的[仓库](https://github.com/KuGouGo/Ice.git)
+* WoringCopy挂载我的[仓库](https://github.com/KuGouGo/Ice-Boom.git)
 
 * 挂载[视频教程](https://m.youtube.com/watch?t=3s&v=inCQFnDmRLo)
 
-* [Js_local_WorkingCopy.conf](https://raw.githubusercontent.com/KuGouGo/Ice/Monster/Js_local_WorkingCopy.conf) 脚本订阅.
+* [Js_local_WorkingCopy.conf](https://raw.githubusercontent.com/KuGouGo/Ice-Boom/master/Js_local_WorkingCopy.conf) 脚本订阅.
 
-* [Get_Cookie.conf](https://raw.githubusercontent.com/KuGouGo/Ice/Monster/Get_Cookie.conf) 获取Cookie.
+* [Get_Cookie.conf](https://raw.githubusercontent.com/KuGouGo/Ice-Boom/master/Get_Cookie.conf) 获取Cookie.
 
-* [Task_Local.conf](https://raw.githubusercontent.com/KuGouGo/Ice/Monster/Task_Local.conf) 定时任务配置,目前无法订阅,请手动根据个人需求复制内容及修改时间.
+* [Task_Local.conf](https://raw.githubusercontent.com/KuGouGo/Ice-Boom/master/Task_Local.conf) 定时任务配置,目前无法订阅,请手动根据个人需求复制内容及修改时间.
 
 
 ## 免责声明：
