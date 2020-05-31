@@ -42,6 +42,7 @@ hostname = draw.jdfcloud.com
 
 */
 const jdbean = "500" //兑换京豆数
+const logs = 0   //响应日志开关,默认关闭
 const cookieName = '来客有礼小程序'
 const signurlKey = 'sy_signurl_lkyl'
 const signheaderKey = 'sy_signheader_lkyl'
@@ -82,12 +83,11 @@ async function all()
   await sign();     // 签到
   await info();     // 账号信息
   await total();    // 总计
-  await status();   // 任务状态
   await tasklist(); // 任务列表
   await lottery();  // 0元抽奖
+  await status();   // 任务状态
   await Daily();    // 日常任务
   await exChange(); // 银豆兑换
- 
 }
 function sign() {
   return new Promise((resolve, reject) =>{
@@ -95,7 +95,7 @@ function sign() {
 	  url: `https://draw.jdfcloud.com//api/turncard/sign?openId=${openid}&petSign=true&turnTableId=131&source=HOME&channelId=87&appId=${appid}`,
        headers:JSON.parse(signheaderVal)}
     sy.post(signurl, (error, response, data) => {
-     //sy.log(`${cookieName}, 签到信息: ${data}`)
+     if(logs) sy.log(`${cookieName}, 签到信息: ${data}`)
       let result = JSON.parse(data)
       const title = `${cookieName}`
       if (result.success == true) {
@@ -108,7 +108,7 @@ function sign() {
       subTitle = `  签到失败❌`
       detail = `说明: ${result.errorMessage}`
       }
-    resolve()
+     resolve()
      })
    })
  }
@@ -119,13 +119,14 @@ function status() {
      headers: JSON.parse(signheaderVal)}
      statusurl.headers['Content-Length'] = `0`;
    sy.get(statusurl, (error, response, data) =>{
-  //sy.log(`${cookieName}, 任务状态: ${data}`)
+   if(logs)sy.log(`${cookieName}, 任务状态: ${data}`)
      taskstatus = JSON.parse(data)
       if (taskstatus.data.dailyTasks[1].status!='received'){
    for (j=0;j<3;j++){
       video()
         }
        }
+    
       if (taskstatus.data.dailyTasks[1].status=='received'){
     detail += `【视频任务】: ✅  +${taskstatus.data.dailyTasks[1].taskReward} 银豆\n`}
       if (taskstatus.data.dailyTasks[0].status!='received'){
@@ -141,8 +142,8 @@ function status() {
   else if (taskstatus.data.weeklyTasks[0].status=='received'){
       detail += `【每周任务】: ✅  +${taskstatus.data.weeklyTasks[0].taskReward}个银豆`
       }
+    resolve()
     })
-   resolve()
   })
 }
 
@@ -155,12 +156,12 @@ function video() {
           body: bodyVal}
     videourl.headers['Content-Length'] = `0`;
    sy.post(videourl, (error, response, data) =>{
-  //sy.log(`${cookieName}, 视频: ${data}`)
+   if(logs)sy.log(`${cookieName}, 视频: ${data}`)
     let videotaskurl = {
 	 url: `https://draw.jdfcloud.com//api/bean/square/silverBean/taskReward/get?openId=${openid}&taskCode=watch_video&inviterOpenId=&appId=${appid}`,headers: JSON.parse(signheaderVal)}
     videotaskurl.headers['Content-Length'] = `0`;
    sy.get(videotaskurl, (error, response, data) => { 
-     sy.log(`${cookieName}, 视频银豆: ${data}`)
+     if(logs) sy.log(`${cookieName}, 视频银豆: ${data}`)
      })
   resolve()
    })
@@ -174,7 +175,7 @@ function lottery() {
 		headers: JSON.parse(signheaderVal)
 	}
     sy.get(daytaskurl, (error, response, data) => {
-    sy.log(`${cookieName}, 0元抽奖 ${data}`)
+    if(logs) sy.log(`${cookieName}, 0元抽奖 ${data}`)
     let lotteryres = JSON.parse(data)
      doneSteps = lotteryres.data.doneSteps
      totalSteps = lotteryres.data.totalSteps
@@ -198,7 +199,7 @@ function info() {
 		url: `https://draw.jdfcloud.com//api/user/user/detail?openId=${openid}&appId=${appid}`,
 		headers: JSON.parse(signheaderVal)}
     sy.get(infourl, (error, response, data) => {
-     //sy.log(`${cookieName}, 账号信息: ${data}`)
+    if(logs)sy.log(`${cookieName}, 账号信息: ${data}`)
    let info = JSON.parse(data)  
     uesername = `${info.data.nickName}`
     resolve()
@@ -213,7 +214,7 @@ function tasklist() {
 		headers: JSON.parse(signheaderVal)}
      taskurl.headers['Content-Length'] = `0`;
     sy.get(taskurl, (error, response, data) => {
-     //sy.log(`${cookieName}, 任务列表: ${data}`)
+    if(logs)sy.log(`${cookieName}, 任务列表: ${data}`)
     task = JSON.parse(data)
     resolve()
   })
@@ -226,7 +227,7 @@ function cycleLucky() {
          url: `https://draw.jdfcloud.com//api/lottery/participate?lotteryId=${lotteryId}&openId=${openid}&formId=123&source=HOME&appId=${appid}`,headers: JSON.parse(signheaderVal),body: '{}'
 }
  sy.post(luckyurl, (error, response, data) => {
-    sy.log(`${cookieName}, 抽奖任务: ${data}`)
+    if(logs)sy.log(`${cookieName}, 抽奖任务: ${data}`)
          })
      resolve()
     })
@@ -242,7 +243,7 @@ return new Promise((resolve, reject) => {
    beanurl.headers['Content-Length'] = `0`;
     sy.get(beanurl, (error, response, data) =>
   {
-     sy.log(`${cookieName}, 日常银豆: ${data}`)
+     if(logs)sy.log(`${cookieName}, 日常银豆: ${data}`)
     })
    resolve()
    })
@@ -257,7 +258,7 @@ return new Promise((resolve, reject) => {
    bean2url.headers['Content-Length'] = `0`;
     sy.get(bean2url, (error, response, data) =>
   {
-    sy.log(`${cookieName}, 本周任务: ${data}`)
+    if(logs)sy.log(`${cookieName}, 本周任务: ${data}`)
     })
    resolve()
    })
@@ -272,7 +273,7 @@ function total() {
 	}
      lotteryurl.headers['Content-Length'] = `0`;
     sy.get(lotteryurl, (error, response, data) => {
-    sy.log(`${cookieName}, 统计: ${data}`)
+    if(logs)sy.log(`${cookieName}, 统计: ${data}`)
       let result = JSON.parse(data)
       const title = `${cookieName}`
       if (result.success == true) {
@@ -284,7 +285,7 @@ function total() {
 	 headers: JSON.parse(signheaderVal)}
     hinturl.headers['Content-Length'] = `0`;
     sy.get(hinturl, (error, response, data) => {
-      //sy.log(`${cookieName}, 可兑换: ${data}`)
+    if(logs)sy.log(`${cookieName}, 可兑换: ${data}`)
       let result = JSON.parse(data)
       const title = `${cookieName}`
    if (SilverBean >result.datas[0].salePrice) {
@@ -320,13 +321,14 @@ function exChange() {
       body:  '{"appId":'+' "'+appid+'"'+', "openId":'+' "'+openid+'"'+', "jdPin":'+' "'+uesername+'"'+', "productCode":"jd_bean_'+jdbean+'"}'
  }
   sy.post(changeurl, (error, response,data) =>{
-    sy.log(`${cookieName}, 兑换京豆: ${data}`)
+    if(logs) sy.log(`${cookieName}, 兑换京豆: ${data}`)
     let result = JSON.parse(data)
     if (result.errorCode== "success"){
       detail += '\n【自动兑换】 兑换'+result.data+'个京豆 ✅'
      }
     })
-sy.msg(cookieName, '昵称: '+ uesername+' '+subTitle, detail)
+  sy.msg(cookieName, '昵称: '+ uesername+' '+subTitle, detail)
+  sy.log('昵称: '+ uesername+' '+subTitle+detail)
   resolve()
   })
 }
