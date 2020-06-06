@@ -25,7 +25,7 @@ weibo.js = type=http-request,pattern=https:\/\/pay\.sc\.weibo\.com\/aj\/mobile\/
 Loon 2.1.0+
 [Script]
 # 本地脚本
-cron "04 00 * * *" script-path=weibo.js, enabled=true, tag=新浪微博
+cron "04 00 * * *" script-path=https://raw.githubusercontent.com/Sunert/Scripts/master/Task/weibo.js, enabled=true, tag=新浪微博
 
 http-request https:\/\/api\.weibo\.cn\/\d\/video\/machine\?gsid script-path=https://raw.githubusercontent.com/Sunert/Scripts/master/Task/weibo.js
 
@@ -133,27 +133,32 @@ function paysign() {
    let payurl =  {
       url: `https://pay.sc.weibo.com/aj/mobile/home/welfare/signin/do?_=${time}`,
      headers: JSON.parse(payheaderVal)}
-     sy.post(payurl, (error, response, data) => {
+sy.post(payurl, (error, response, data) => {
      sy.log(`${CookieName}钱包, data: ${data}`)
-     let result = JSON.parse(data)
+   try{
+     let result = JSON.parse(response.body)
      if (result.status == 1){
          subTitle += `  钱包签到成功 🎉`
          detail += `  钱包获取积分:`+ result.score+' 分'
          }  
-     else if (result.status == 2){
+     else if (result.code == 100000){
          subTitle += `   钱包: 重复签到`
-         //detail += `钱包: `+ result.msg
+         detail += ``
        }
      else {
          subTitle = `钱包签到失败❌`
          //detail += ` 钱包: `+result.msg
          }
        sy.msg(CookieName, subTitle, detail)
-       })
+        }
+    catch(e){
+         sy.msg(CookieName, subTitle+`  钱包Cookie失效 ❎`, detail)
+       }
+     })
     }
-  resolve()
   })
 }
+
 
 function init() {
   isSurge = () => {
