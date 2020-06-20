@@ -11,18 +11,14 @@
 * [QuantumultX.conf](https://raw.githubusercontent.com/KuGouGo/Ice-Boom/master/QuantumultX.conf)
 
 
-### 本地配置：
+### 远程配置：
+* [视频教程](https://youtu.be/tr5aji82Vks)
 
-* 建立本地文件夹
-目录 iCloud Drive/QuantumultX/Scripts/KuGouGo 或者 我的iPhone/QuantumultX/Scripts/KuGouGo
+* 挂载[视频教程](https://youtu.be/tr5aji82Vks)
 
-* WoringCopy挂载我的[仓库](https://github.com/KuGouGo/Ice-Boom.git)
+* [Js.conf](https://raw.githubusercontent.com/KuGouGo/Ice-Boom/master/Js.conf) 脚本订阅.
 
-* 挂载[视频教程](https://m.youtube.com/watch?t=3s&v=inCQFnDmRLo)
-
-* [Js_local_WorkingCopy.conf](https://raw.githubusercontent.com/KuGouGo/Ice-Boom/master/Js_local_WorkingCopy.conf) 脚本订阅.
-
-* [Get_Cookie.conf](https://raw.githubusercontent.com/KuGouGo/Ice-Boom/master/Get_Cookie.conf) 获取Cookie.
+* [Cookie.conf](https://raw.githubusercontent.com/KuGouGo/Ice-Boom/master/Cookie.conf) 获取Cookie远程订阅,仅在Cookie获取或失效时启用,不需要时右滑动禁用.
 
 * [Task_Local.conf](https://raw.githubusercontent.com/KuGouGo/Ice-Boom/master/Task_Local.conf) 定时任务配置,目前无法订阅,请手动根据个人需求复制内容及修改时间.
 
