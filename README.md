@@ -20,7 +20,7 @@
 
 * [Cookie.conf](https://raw.githubusercontent.com/KuGouGo/Ice-Boom/master/Cookie.conf) 获取Cookie远程订阅,仅在Cookie获取或失效时启用,不需要时右滑动禁用.
 
-* [Task_Local.conf](https://raw.githubusercontent.com/KuGouGo/Ice-Boom/master/Task_Local.conf) 定时任务配置,目前无法订阅,请手动根据个人需求复制内容及修改时间.
+* [Task_Remotel.conf](https://raw.githubusercontent.com/KuGouGo/Ice-Boom/master/Task_Remote.conf) 定时任务配置,目前无法订阅,请手动根据个人需求复制内容及修改时间.
 
 
 ## 免责声明：
