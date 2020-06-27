@@ -42,8 +42,6 @@
 
 * [@NobyDa](https://github.com/NobyDa)
 
-* [@lhie1](https://github.com/lhie1)
-
 * [@ConnersHua](https://github.com/ConnersHua)
 
 * [@eHpo1](https://github.com/eHpo1)
@@ -52,6 +50,4 @@
 
 * [@yichahucha](https://github.com/yichahucha)
 
-* [@langkhach270389](https://github.com/langkhach270389)
-
-* [@Choler](https://github.com/Choler)
+* [@Sunert](https://github.com/Sunert)
