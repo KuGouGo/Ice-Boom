@@ -1,17 +1,71 @@
 {
-  "id": "chavy.app.sub",
-  "name": "Chavy 签到应用订阅",
-  "author": "@chavyleung",
-  "icon": "https://avatars3.githubusercontent.com/u/29748519?s=460&u=392a19e85465abbcb1791c9b8b32184a16e6795e&v=4",
-  "repo": "https://github.com/chavyleung/scripts",
+  "id": "KuGouGo.app.sub",
+  "name": "KuGouGo应用订阅",
+  "author": "@KuGouGo",
+  "icon": "https://avatars1.githubusercontent.com/u/62388728?s=400&u=f88462a00efd10c34c8cd935bc0427c5392be010&v=4",
+  "repo": "https://github.com/KuGouGo/Ice-Boom/",
   "apps": [
     {
-      "id": "gdoil",
-      "name": "加油广东",
-      "keys": ["chavy_signurl_gdoil", "chavy_signheader_gdoil"],
-      "author": "@chavyleung",
-      "repo": "https://github.com/chavyleung/scripts/tree/master/gdoil",
-      "icons": ["https://raw.githubusercontent.com/Orz-3/mini/master/gdoil.png", "https://raw.githubusercontent.com/Orz-3/task/master/gdoil.png"]
-    }
-  ]
-}
+      "id": "jd_fruit",
+      "name": "京东水果",
+      "keys": [
+        "CookieJD",
+        "jd_fruit_name",
+        "jd_fruit1",
+        "jd_fruit2",
+        "jd_fruit3",
+        "jd_fruit4"
+      ],
+      "settings": [
+        {
+          "id": "CookieJD",
+          "name": "CookieJD",
+          "val": "",
+          "type": "text",
+          "desc": "使用NobyDa的京东ck。"
+        },
+        {
+          "id": "jd_fruit_name",
+          "name": "京东账号昵称",
+          "val": "",
+          "type": "text",
+          "desc": "这里可以填你自己京东账号昵称,用于区分账号"
+        },
+        {
+          "id": "jd_fruit1",
+          "name": "互助码1",
+          "val": "",
+          "type": "text",
+          "desc": "京东水果互助码.这是别人的shareCode,你帮别人助力."
+        },
+        {
+          "id": "jd_fruit2",
+          "name": "互助码2",
+          "val": "",
+          "type": "text",
+          "desc": "京东水果互助码."
+        },
+        {
+          "id": "jd_fruit3",
+          "name": "互助码3",
+          "val": "",
+          "type": "text",
+          "desc": "京东水果互助码.这是别人的shareCode,你帮别人助力."
+        },
+        {
+          "id": "jd_fruit4",
+          "name": "互助码4",
+          "val": "",
+          "type": "text",
+          "desc": "京东水果互助码.这是别人的shareCode,你帮别人助力."
+        }
+      ],
+      "author": "@KuGouGo",
+      "repo": "https://github.com/KuGouGo/Ice-Boom/blob/master/Js/JD/jd_fruit.js",
+      "icons": [
+        "https://raw.githubusercontent.com/Orz-3/task/master/jd.png",
+        "https://raw.githubusercontent.com/Orz-3/task/master/jd.png"
+      ]
+     }
+   ]
+ }
