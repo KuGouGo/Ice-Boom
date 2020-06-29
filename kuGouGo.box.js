@@ -230,8 +230,8 @@ function getSystemApps() {
           "author": "@KuGouGo",
           "repo": "https://github.com/KuGouGo/Ice-Boom/blob/master/Js/JD/jd_fruit.js",
           "icons": [
-            "https://raw.githubusercontent.com/Orz-3/task/master/jd.png",
-            "https://raw.githubusercontent.com/Orz-3/task/master/jd.png"
+            "https://raw.githubusercontent.com/znz1992/Gallery/master/jdsg.png",
+            "https://raw.githubusercontent.com/znz1992/Gallery/master/jdsg.png"
           ]
         },
         {
