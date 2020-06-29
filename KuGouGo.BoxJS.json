@@ -285,14 +285,6 @@
      "author": "@KuGouGo",
      "repo": "https://github.com/KuGouGo/Ice-Boom/blob/master/Js/zqkd/youth.js",
      "icons": ["https://raw.githubusercontent.com/Orz-3/mini/master/youth.png", "https://raw.githubusercontent.com/Orz-3/task/master/youth.png"]
-   },
-   {
-      "id": "JD",
-      "name": "京东",
-      "keys": ["CookieJD", "CookieJD2]",
-      "author": "@KuGouGo",
-      "repo": 'https://github.com/KuGouGo/Ice-Boom/blob/master/Js/JD/JD_DailyBonus.js',
-      "icons": ['https://raw.githubusercontent.com/Orz-3/mini/master/jd.png', 'https://raw.githubusercontent.com/Orz-3/task/master/jd.png']
-    }
-  ]
+   }
+ ]
 }
