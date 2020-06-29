@@ -66,6 +66,233 @@
         "https://raw.githubusercontent.com/Orz-3/task/master/jd.png",
         "https://raw.githubusercontent.com/Orz-3/task/master/jd.png"
       ]
-     }
-   ]
- }
+    },
+    {
+      "id": "jd_pet",
+      "name": "京东萌宠",
+      "keys": [
+        "CookieJD",
+        "jd_pet_name",
+        "jd_pet1",
+        "jd_pet2",
+        "jd_pet3",
+        "jd_pet4",
+        "jd_pet5"
+      ],
+      "settings": [
+        {
+          "id": "CookieJD",
+          "name": "CookieJD",
+          "val": "",
+          "type": "text",
+          "desc": "使用NobyDa的京东ck。"
+        },
+        {
+          "id": "jd_pet_name",
+          "name": "京东账号昵称",
+          "val": "",
+          "type": "text",
+          "desc": "这里可以填你自己京东账号昵称,用于区分账号"
+        },
+        {
+          "id": "jd_pet1",
+          "name": "互助码1",
+          "val": "",
+          "type": "text",
+          "desc": "东东萌宠互助码.这是别人的shareCode,你帮别人助力."
+        },
+        {
+          "id": "jd_pet2",
+          "name": "互助码2",
+          "val": "",
+          "type": "text",
+          "desc": "东东萌宠互助码.这是别人的shareCode,你帮别人助力."
+        },
+        {
+          "id": "jd_pet3",
+          "name": "互助码3",
+          "val": "",
+          "type": "text",
+          "desc": "东东萌宠互助码.这是别人的shareCode,你帮别人助力."
+        },
+        {
+          "id": "jd_pet4",
+          "name": "互助码4",
+          "val": "",
+          "type": "text",
+          "desc": "东东萌宠互助码.这是别人的shareCode,你帮别人助力."
+        },
+        {
+          "id": "jd_pet5",
+          "name": "互助码5",
+          "val": "",
+          "type": "text",
+          "desc": "东东萌宠互助码.这是别人的shareCode,你帮别人助力."
+        }
+      ],
+      "author": "@KuGouGo",
+      "repo": "https://github.com/KuGouGo/Ice-Boom/blob/master/Js/JD/jd_pet.js",
+      "icons": [
+        "https://raw.githubusercontent.com/znz1992/Gallery/master/jdmc.png",
+        "https://raw.githubusercontent.com/znz1992/Gallery/master/jdmc.png"
+      ]
+    },
+    {
+      "id": "KuGouGo.suning",
+      "name": "苏宁易购",
+      "keys": ["KuGouGo_login_url_suning", "KuGouGo_login_body_suning", "KuGouGo_login_header_suning", "KuGouGo_sign_url_suning", "KuGouGo_sign_header_suning", "KuGouGo_signweb_url_suning", "snyg_userTokenKey", "KuGouGo_signweb_header_suning", "KuGouGo_signgame_url_suning", "KuGouGo_signgame_header_suning", "KuGouGo_signgetgame_url_suning", "KuGouGo_signgetgame_header_suning"],
+      "author": "@KuGouGo",
+      "repo": "https://github.com/KuGouGo/Ice-Boom/blob/master/Js/suning/suning.js",
+      "icons": ["https://raw.githubusercontent.com/Orz-3/mini/master/suning.png", "https://raw.githubusercontent.com/Orz-3/task/master/suning.png"]
+    },
+    {
+      "id": "KuGouGo.bilibili.live",
+      "name": "bilibili直播",
+      "keys": ["KuGouGo_cookie_bilibili"],
+      "author": "@KuGouGo",
+      "repo": "https://github.com/KuGouGo/Ice-Boom/blob/master/Js/bilibili/bilibili.js",
+      "icons": ["https://raw.githubusercontent.com/Orz-3/mini/master/bilibili.png", "https://raw.githubusercontent.com/Orz-3/task/master/bilibili.png"]
+    },
+    {
+      "id": "KuGouGo.meituan",
+      "name": "美团",
+      "keys": ["KuGouGo_tokenurl_meituan", "KuGouGo_tokenheader_meituan", "KuGouGo_signurl_meituan", "KuGouGo_signheader_meituan", "KuGouGo_signbody_meituan"],
+      "author": "@KuGouGo",
+      "repo": "https://github.com/KuGouGo/Ice-Boom/blob/master/Js/meituan/meituan.js",
+      "icons": ["https://raw.githubusercontent.com/Orz-3/mini/master/meituan.png", "https://raw.githubusercontent.com/Orz-3/task/master/meituan.png"]
+    },
+    {
+      "id": "jd_plantBean",
+      "name": "京东种豆",
+      "keys": [
+        "CookieJD",
+        "jd_plant_bean_name",
+        "jd_plantBean1",
+        "jd_plantBean2",
+        "jd_plantBean3"
+      ],
+      "settings": [
+        {
+          "id": "CookieJD",
+          "name": "CookieJD",
+          "val": "",
+          "type": "text",
+          "desc": "使用NobyDa的京东ck。"
+        },
+        {
+          "id": "jd_plant_bean_name",
+          "name": "京东账号昵称",
+          "val": "",
+          "type": "text",
+          "desc": "这里可以填你自己京东账号昵称,用于区分账号"
+        },
+        {
+          "id": "jd_plantBean1",
+          "name": "互助码1",
+          "val": "",
+          "type": "text",
+          "desc": "种豆得豆互助码.这是别人的助力码,你帮别人助力."
+        },
+        {
+          "id": "jd_plantBean2",
+          "name": "互助码2",
+          "val": "",
+          "type": "text",
+          "desc": "种豆得豆互助码.这是别人的助力码,你帮别人助力."
+        },
+        {
+          "id": "jd_plantBean3",
+          "name": "互助码3",
+          "val": "",
+          "type": "text",
+          "desc": "种豆得豆互助码.这是别人的助力码,你帮别人助力."
+        }
+      ],
+      "author": "@KuGouGo",
+      "repo": "https://github.com/KuGouGo/Ice-Boom/blob/master/Js/JD/jd_plantBean.js",
+      "icons": [
+        "https://raw.githubusercontent.com/znz1992/Gallery/master/jdzd.png",
+        "https://raw.githubusercontent.com/znz1992/Gallery/master/jdzd.png"
+      ]
+      },
+      {
+      "id": "lk.weiboST",
+      "name": "微博超话",
+      "keys": ["lkWeiboSTSignHeaderKey", "lkUserFollowSTKey"],
+      "settings": [
+        {
+          "id": "lkIsEnableLogWeiboST",
+          "name": "开启/关闭日志（签到脚本）",
+          "val": true,
+          "type": "boolean",
+          "desc": "默认开启"
+        },
+        {
+          "id": "lkIsEnableLogWeiboSTCookie",
+          "name": "开启/关闭日志（获取Cookie脚本）",
+          "val": true,
+          "type": "boolean",
+          "desc": "默认开启"
+        },
+        {
+          "id": "lkIsClearCookie",
+          "name": "开启/关闭删除Cookie",
+          "val": false,
+          "type": "boolean",
+          "desc": "默认关闭"
+        },
+        {
+          "id": "lkWeiboSTSignHeaderKey",
+          "name": "Cookie",
+          "val": "",
+          "type": "text",
+          "desc": "Cookie"
+        },
+        {
+          "id": "lkUserFollowSTKey",
+          "name": "需要签到的超话列表",
+          "val": "",
+          "type": "text",
+          "desc": "需要签到的超话列表"
+        },
+        {
+          "id": "lkIsEnableGetCookieWeiboST",
+          "name": "开启/关闭获取Cookie",
+          "val": true,
+          "type": "boolean",
+          "desc": "默认开启"
+        }
+      ],
+      "author": "@KuGouGo",
+    "repo": "https://github.com/KuGouGo/Ice-Boom/blob/master/Js/weibo/weiboST.js",
+    "icons": [
+      "https://raw.githubusercontent.com/Orz-3/mini/master/weibo.png",
+      "https://raw.githubusercontent.com/Orz-3/task/master/weibo.png"
+    ]
+    },
+    {
+     "id": "weibo",
+     "name": "新浪微博",
+     "keys": ["sy.signurl.wb", "sy_signheader_wb", "sy_payheader_wb", "sy_token_wb"],
+     "author": "@KuGouGo",
+     "repo": "https://github.com/KuGouGo/Ice-Boom/blob/master/Js/weibo/weibo.js",
+     "icons": ["https://raw.githubusercontent.com/Orz-3/mini/master/weibo.png", "https://raw.githubusercontent.com/Orz-3/task/master/weibo.png"]
+   },
+   {
+     "id": "youth",
+     "name": "中青看点",
+     "keys": ["youthheader_zq", "read_zq", "red_zq", "readtime_zq"],
+     "author": "@KuGouGo",
+     "repo": "https://github.com/KuGouGo/Ice-Boom/blob/master/Js/zqkd/youth.js",
+     "icons": ["https://raw.githubusercontent.com/Orz-3/mini/master/youth.png", "https://raw.githubusercontent.com/Orz-3/task/master/youth.png"]
+   },
+   {
+      "id": "JD",
+      "name": "京东",
+      "keys": ["CookieJD", "CookieJD2]",
+      "author": "@KuGouGo",
+      "repo": 'https://github.com/KuGouGo/Ice-Boom/blob/master/Js/JD/JD_DailyBonus.js',
+      "icons": ['https://raw.githubusercontent.com/Orz-3/mini/master/jd.png', 'https://raw.githubusercontent.com/Orz-3/task/master/jd.png']
+    }
+  ]
+}
