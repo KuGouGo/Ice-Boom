@@ -285,6 +285,58 @@
      "author": "@KuGouGo",
      "repo": "https://github.com/KuGouGo/Ice-Boom/blob/master/Js/zqkd/youth.js",
      "icons": ["https://raw.githubusercontent.com/Orz-3/mini/master/youth.png", "https://raw.githubusercontent.com/Orz-3/task/master/youth.png"]
+   },
+   {
+      "id": "JD",
+      "name": "京东",
+      "keys": ["CookieJD", "CookieJD2]",
+      "author": "@KuGouGo",
+      "repo": 'https://github.com/KuGouGo/Ice-Boom/blob/master/Js/JD/JD_DailyBonus.js',
+      "icons": ['https://raw.githubusercontent.com/Orz-3/mini/master/jd.png', 'https://raw.githubusercontent.com/Orz-3/task/master/jd.png']
+    },
+    {
+      id: 'videoqq',
+      name: '腾讯视频',
+      keys: ['KuGouGo_cookie_videoqq', 'KuGouGo_auth_url_videoqq', 'KuGouGo_auth_header_videoqq', 'KuGouGo_msign_url_videoqq', 'KuGouGo_msign_header_videoqq'],
+      author: "@KuGouGo",
+      repo: 'https://github.com/KuGouGo/Ice-Boom/blob/master/Js/videoqq/videoqq.js',
+      icons: ['https://raw.githubusercontent.com/Orz-3/mini/master/videoqq.png', 'https://raw.githubusercontent.com/Orz-3/task/master/videoqq.png']
+    },
+    {
+      id: 'NeteaseMusic',
+      name: '网易云音乐',
+      keys: ['KuGouGo_cookie_neteasemusic'],
+      settings: [
+        { id: 'CFG_neteasemusic_retryCnt', name: '重试次数', val: 10, type: 'text', desc: '一直尝试签到直至出现“重复签到”标识!' },
+        { id: 'CFG_neteasemusic_retryInterval', name: '重试间隔 (毫秒)', val: 500, type: 'text', desc: '每次重试间隔时间 (毫秒)！' }
+      ],
+      author: "@KuGouGo",
+      repo: 'https://github.com/KuGouGo/Ice-Boom/blob/master/Js/neteasemusic/neteasemusic.js',
+      icons: ['https://raw.githubusercontent.com/Orz-3/mini/master/Netease.png', 'https://raw.githubusercontent.com/Orz-3/task/master/Netease.png']
+    },
+    {
+      id: 'WPS',
+      name: 'WPS',
+      keys: ['KuGouGo_signhomeurl_wps', 'KuGouGo_signhomeheader_wps'],
+      author: "@KuGouGo",
+      repo: 'https://github.com/KuGouGo/Ice-Boom/blob/master/Js/wps/wps.js',
+      icons: ['https://raw.githubusercontent.com/Orz-3/mini/master/wps.png', 'https://raw.githubusercontent.com/Orz-3/task/master/wps.png']
+    },
+    {
+     id: 'txnews',
+     name: '腾讯新闻',
+     keys: ['KuGouGo_signurl_txnews', 'KuGouGo_cookie_txnews', 'KuGouGo_signurl_txnews2', 'KuGouGo_cookie_txnews2'],
+     author: "@KuGouGo",
+     repo: 'https://github.com/KuGouGo/Ice-Boom/blob/master/Js/txnews/txnews2.js',
+     icons: ['https://raw.githubusercontent.com/Orz-3/mini/master/txnews.png', 'https://raw.githubusercontent.com/Orz-3/task/master/txnews.png']
+   },
+   {
+      id: 'sfexpress',
+      name: '顺丰速运',
+      keys: ['KuGouGo_loginurl_sfexpress', 'KuGouGo_loginheader_sfexpress'],
+      author: "@KuGouGo",
+      repo: 'https://github.com/KuGouGo/Ice-Boom/blob/master/Js/sf/sfexpress.js',
+      icons: ['https://raw.githubusercontent.com/Orz-3/mini/master/sfexpress.png', 'https://raw.githubusercontent.com/Orz-3/task/master/sfexpress.png']
     }
   ]
 }
