@@ -216,16 +216,16 @@
       ]
       },
       {
-      "id": "lk.weiboST",
-      "name": "微博超话",
-      "keys": ["lkWeiboSTSignHeaderKey", "lkUserFollowSTKey"],
-      "settings": [
-        {
-          "id": "lkIsEnableLogWeiboST",
-          "name": "开启/关闭日志（签到脚本）",
-          "val": true,
-          "type": "boolean",
-          "desc": "默认开启"
+        "id": "lk.weiboST",
+        "name": "微博超话",
+        "keys": ["lkWeiboSTSignHeaderKey", "lkUserFollowSTKey"],
+        "settings": [
+          {
+            "id": "lkIsEnableLogWeiboST",
+            "name": "开启/关闭日志（签到脚本）",
+            "val": true,
+            "type": "boolean",
+            "desc": "默认开启"
         },
         {
           "id": "lkIsEnableLogWeiboSTCookie",
@@ -269,8 +269,8 @@
       "https://raw.githubusercontent.com/Orz-3/mini/master/weibo.png",
       "https://raw.githubusercontent.com/Orz-3/task/master/weibo.png"
     ]
-    },
-    {
+   },
+   {
      "id": "weibo",
      "name": "新浪微博",
      "keys": ["sy.signurl.wb", "sy_signheader_wb", "sy_payheader_wb", "sy_token_wb"],
