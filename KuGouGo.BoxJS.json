@@ -3,7 +3,7 @@
   "name": "KuGouGo应用订阅",
   "author": "@KuGouGo",
   "icon": "https://avatars1.githubusercontent.com/u/62388728?s=400&u=f88462a00efd10c34c8cd935bc0427c5392be010&v=4",
-  "repo": "https://github.com/KuGouGo/Ice-Boom",
+  "repo": "https://github.com/KuGouGo/Ice-Boom/",
   "apps": [
     {
       "id": "jd_fruit",
@@ -61,7 +61,7 @@
         }
       ],
       "author": "@KuGouGo",
-      "repo": "https://github.com/KuGouGo/Ice-Boom/raw/master/Js/JD/jd_fruit.js",
+      "repo": "https://github.com/KuGouGo/Ice-Boom/blob/master/Js/JD/jd_fruit.js",
       "icons": [
         "https://raw.githubusercontent.com/Orz-3/task/master/jd.png",
         "https://raw.githubusercontent.com/Orz-3/task/master/jd.png"
@@ -131,7 +131,7 @@
         }
       ],
       "author": "@KuGouGo",
-      "repo": "https://github.com/KuGouGo/Ice-Boom/raw/master/Js/JD/jd_pet.js",
+      "repo": "https://github.com/KuGouGo/Ice-Boom/blob/master/Js/JD/jd_pet.js",
       "icons": [
         "https://raw.githubusercontent.com/znz1992/Gallery/master/jdmc.png",
         "https://raw.githubusercontent.com/znz1992/Gallery/master/jdmc.png"
@@ -142,7 +142,7 @@
       "name": "苏宁易购",
       "keys": ["KuGouGo_login_url_suning", "KuGouGo_login_body_suning", "KuGouGo_login_header_suning", "KuGouGo_sign_url_suning", "KuGouGo_sign_header_suning", "KuGouGo_signweb_url_suning", "snyg_userTokenKey", "KuGouGo_signweb_header_suning", "KuGouGo_signgame_url_suning", "KuGouGo_signgame_header_suning", "KuGouGo_signgetgame_url_suning", "KuGouGo_signgetgame_header_suning"],
       "author": "@KuGouGo",
-      "repo": "https://github.com/KuGouGo/Ice-Boom/raw/master/Js/suning/suning.js",
+      "repo": "https://github.com/KuGouGo/Ice-Boom/blob/master/Js/suning/suning.js",
       "icons": ["https://raw.githubusercontent.com/Orz-3/mini/master/suning.png", "https://raw.githubusercontent.com/Orz-3/task/master/suning.png"]
     },
     {
@@ -150,7 +150,7 @@
       "name": "bilibili直播",
       "keys": ["KuGouGo_cookie_bilibili"],
       "author": "@KuGouGo",
-      "repo": "https://github.com/KuGouGo/Ice-Boom/raw/master/Js/bilibili/bilibili.js",
+      "repo": "https://github.com/KuGouGo/Ice-Boom/blob/master/Js/bilibili/bilibili.js",
       "icons": ["https://raw.githubusercontent.com/Orz-3/mini/master/bilibili.png", "https://raw.githubusercontent.com/Orz-3/task/master/bilibili.png"]
     },
     {
@@ -158,7 +158,7 @@
       "name": "美团",
       "keys": ["KuGouGo_tokenurl_meituan", "KuGouGo_tokenheader_meituan", "KuGouGo_signurl_meituan", "KuGouGo_signheader_meituan", "KuGouGo_signbody_meituan"],
       "author": "@KuGouGo",
-      "repo": "https://github.com/KuGouGo/Ice-Boom/raw/master/Js/meituan/meituan.js",
+      "repo": "https://github.com/KuGouGo/Ice-Boom/blob/master/Js/meituan/meituan.js",
       "icons": ["https://raw.githubusercontent.com/Orz-3/mini/master/meituan.png", "https://raw.githubusercontent.com/Orz-3/task/master/meituan.png"]
     },
     {
@@ -209,7 +209,7 @@
         }
       ],
       "author": "@KuGouGo",
-      "repo": "https://github.com/KuGouGo/Ice-Boom/raw/master/Js/JD/jd_plantBean.js",
+      "repo": "https://github.com/KuGouGo/Ice-Boom/blob/master/Js/JD/jd_plantBean.js",
       "icons": [
         "https://raw.githubusercontent.com/znz1992/Gallery/master/jdzd.png",
         "https://raw.githubusercontent.com/znz1992/Gallery/master/jdzd.png"
@@ -264,7 +264,7 @@
         }
       ],
       "author": "@KuGouGo",
-    "repo": "https://github.com/KuGouGo/Ice-Boom/raw/master/Js/weibo/weiboST.js",
+    "repo": "https://github.com/KuGouGo/Ice-Boom/blob/master/Js/weibo/weiboST.js",
     "icons": [
       "https://raw.githubusercontent.com/Orz-3/mini/master/weibo.png",
       "https://raw.githubusercontent.com/Orz-3/task/master/weibo.png"
@@ -275,7 +275,7 @@
      "name": "新浪微博",
      "keys": ["sy.signurl.wb", "sy_signheader_wb", "sy_payheader_wb", "sy_token_wb"],
      "author": "@KuGouGo",
-     "repo": "https://github.com/KuGouGo/Ice-Boom/raw/master/Js/weibo/weibo.js",
+     "repo": "https://github.com/KuGouGo/Ice-Boom/blob/master/Js/weibo/weibo.js",
      "icons": ["https://raw.githubusercontent.com/Orz-3/mini/master/weibo.png", "https://raw.githubusercontent.com/Orz-3/task/master/weibo.png"]
    },
    {
@@ -283,7 +283,7 @@
      "name": "中青看点",
      "keys": ["youthheader_zq", "read_zq", "red_zq", "readtime_zq"],
      "author": "@KuGouGo",
-     "repo": "https://github.com/KuGouGo/Ice-Boom/raw/master/Js/zqkd/youth.js",
+     "repo": "https://github.com/KuGouGo/Ice-Boom/blob/master/Js/zqkd/youth.js",
      "icons": ["https://raw.githubusercontent.com/Orz-3/mini/master/youth.png", "https://raw.githubusercontent.com/Orz-3/task/master/youth.png"]
    },
    {
@@ -291,7 +291,7 @@
       name: '京东',
       keys: ['CookieJD', 'CookieJD2'],
       author: '@KuGouGo',
-      repo: 'https://github.com/KuGouGo/Ice-Boom/raw/master/Js/JD/JD_DailyBonus.js',
+      repo: 'https://github.com/KuGouGo/Ice-Boom/blob/master/Js/JD/JD_DailyBonus.js',
       icons: ['https://raw.githubusercontent.com/Orz-3/mini/master/jd.png', 'https://raw.githubusercontent.com/Orz-3/task/master/jd.png']
     },
     {
@@ -299,7 +299,7 @@
       name: '腾讯视频',
       keys: ['KuGouGo_cookie_videoqq', 'KuGouGo_auth_url_videoqq', 'KuGouGo_auth_header_videoqq', 'KuGouGo_msign_url_videoqq', 'KuGouGo_msign_header_videoqq'],
       author: '@KuGouGo',
-      repo: 'https://github.com/KuGouGo/Ice-Boom/raw/master/Js/videoqq/videoqq.js',
+      repo: 'https://github.com/KuGouGo/Ice-Boom/blob/master/Js/videoqq/videoqq.js',
       icons: ['https://raw.githubusercontent.com/Orz-3/mini/master/videoqq.png', 'https://raw.githubusercontent.com/Orz-3/task/master/videoqq.png']
     },
     {
@@ -311,7 +311,7 @@
         { id: 'CFG_neteasemusic_retryInterval', name: '重试间隔 (毫秒)', val: 500, type: 'text', desc: '每次重试间隔时间 (毫秒)！' }
       ],
       author: '@KuGouGo',
-      repo: 'https://github.com/KuGouGo/Ice-Boom/raw/master/Js/neteasemusic/neteasemusic.js',
+      repo: 'https://github.com/KuGouGo/Ice-Boom/blob/master/Js/neteasemusic/neteasemusic.js',
       icons: ['https://raw.githubusercontent.com/Orz-3/mini/master/Netease.png', 'https://raw.githubusercontent.com/Orz-3/task/master/Netease.png']
     },
     {
@@ -319,7 +319,7 @@
       name: 'WPS',
       keys: ['KuGouGo_signhomeurl_wps', 'KuGouGo_signhomeheader_wps'],
       author: '@KuGouGo',
-      repo: 'https://github.com/KuGouGo/Ice-Boom/raw/master/Js/wps/wps.js',
+      repo: 'https://github.com/KuGouGo/Ice-Boom/blob/master/Js/wps/wps.js',
       icons: ['https://raw.githubusercontent.com/Orz-3/mini/master/wps.png', 'https://raw.githubusercontent.com/Orz-3/task/master/wps.png']
     },
     {
@@ -327,7 +327,7 @@
      name: '腾讯新闻',
      keys: ['sy_signurl_txnews', 'sy_cookie_txnews', 'sy_signurl_txnews2', 'sy_cookie_txnews2'],
      author: '@Sunert',
-     repo: 'https://github.com/KuGouGo/Ice-Boom/raw/master/Js/txnews/txnews2.js',
+     repo: 'https://github.com/KuGouGo/Ice-Boom/blob/master/Js/txnews/txnews2.js',
      icons: ['https://raw.githubusercontent.com/Orz-3/mini/master/txnews.png', 'https://raw.githubusercontent.com/Orz-3/task/master/txnews.png']
    },
    {
@@ -335,7 +335,7 @@
       name: '顺丰速运',
       keys: ['KuGouGo_loginurl_sfexpress', 'KuGouGo_loginheader_sfexpress'],
       author: '@KuGouGo',
-      repo: 'https://github.com/KuGouGo/Ice-Boom/raw/master/Js/sf/sfexpress.js',
+      repo: 'https://github.com/KuGouGo/Ice-Boom/blob/master/Js/sf/sfexpress.js',
       icons: ['https://raw.githubusercontent.com/Orz-3/mini/master/sfexpress.png', 'https://raw.githubusercontent.com/Orz-3/task/master/sfexpress.png']
     }
   ]
