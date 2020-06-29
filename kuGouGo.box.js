@@ -90,84 +90,11 @@ function getSystemCfgs() {
 function getSystemApps() {
   const sysapps = [
     {
-      id: '10010',
-      name: '中国联通',
-      keys: ['chavy_tokenurl_10010', 'chavy_tokenheader_10010', 'chavy_signurl_10010', 'chavy_signheader_10010', 'chavy_loginlotteryurl_10010', 'chavy_loginlotteryheader_10010', 'chavy_findlotteryurl_10010', 'chavy_findlotteryheader_10010'],
-      author: '@chavyleung',
-      repo: 'https://github.com/chavyleung/scripts/tree/master/10010',
-      icons: ['https://raw.githubusercontent.com/Orz-3/mini/master/10010.png', 'https://raw.githubusercontent.com/Orz-3/task/master/10010.png']
-    },
-    {
-      id: '52poje',
-      name: '吾爱破解',
-      keys: ['CookieWA'],
-      author: '@NobyDa',
-      repo: 'https://github.com/NobyDa/Script/blob/master/52pojie-DailyBonus/52pojie.js',
-      icons: ['https://raw.githubusercontent.com/Orz-3/mini/master/52pj.png', 'https://raw.githubusercontent.com/Orz-3/task/master/52pj.png']
-    },
-    {
-      id: 'AcFun',
-      name: 'AcFun',
-      keys: ['chavy_cookie_acfun', 'chavy_token_acfun'],
-      author: '@chavyleung',
-      repo: 'https://github.com/chavyleung/scripts/tree/master/acfun',
-      icons: ['https://raw.githubusercontent.com/Orz-3/mini/master/acfun.png', 'https://raw.githubusercontent.com/Orz-3/task/master/acfun.png']
-    },
-    {
-      id: 'ApkTw',
-      name: 'ApkTw',
-      keys: ['chavy_cookie_apktw'],
-      author: '@chavyleung',
-      repo: 'https://github.com/chavyleung/scripts/tree/master/apktw',
-      url: 'https://apk.tw/',
-      icons: ['https://raw.githubusercontent.com/Orz-3/mini/master/apktw.png', 'https://raw.githubusercontent.com/Orz-3/task/master/apktw.png'],
-      tasks: [{ cron: '3 0 * * *', script: 'apktw.js' }],
-      rewrites: [{ type: 'request', pattern: '^https://apk.tw/member.php(.*?)action=login', script: 'apktw.cookie.js', body: true }]
-    },
-    {
-      id: 'BAIDU',
-      name: '百度签到',
-      keys: ['chavy_cookie_tieba'],
-      settings: [
-        { id: 'CFG_tieba_isOrderBars', name: '按连签排序', val: false, type: 'boolean', desc: '默认按经验排序' },
-        { id: 'CFG_tieba_maxShowBars', name: '每页显示数', val: 15, type: 'text', desc: '每页最显示多少个吧信息' },
-        { id: 'CFG_tieba_maxSignBars', name: '每次并发', val: 5, type: 'text', desc: '每次并发签到多少个吧' },
-        { id: 'CFG_tieba_signWaitTime', name: '并发间隔 (毫秒)', val: 2000, type: 'text', desc: '每次并发间隔时间' }
-      ],
-      author: '@chavyleung',
-      repo: 'https://github.com/chavyleung/scripts/tree/master/tieba',
-      icons: ['https://raw.githubusercontent.com/Orz-3/mini/master/baidu.png', 'https://raw.githubusercontent.com/Orz-3/task/master/baidu.png']
-    },
-    {
-      id: 'iQIYI',
-      name: '爱奇艺',
-      keys: ['CookieQY'],
-      author: '@NobyDa',
-      repo: 'https://github.com/NobyDa/Script/blob/master/iQIYI-DailyBonus/iQIYI.js',
-      icons: ['https://raw.githubusercontent.com/Orz-3/mini/master/iQIYI.png', 'https://raw.githubusercontent.com/Orz-3/task/master/iQIYI.png']
-    },
-    {
       id: 'JD',
       name: '京东',
       keys: ['CookieJD', 'CookieJD2'],
       author: '@NobyDa',
       repo: 'https://github.com/NobyDa/Script/blob/master/JD-DailyBonus/JD_DailyBonus.js',
-      icons: ['https://raw.githubusercontent.com/Orz-3/mini/master/jd.png', 'https://raw.githubusercontent.com/Orz-3/task/master/jd.png']
-    },
-    {
-      id: 'JD618',
-      name: '京东618',
-      keys: ['chavy_url_jd816', 'chavy_body_jd816', 'chavy_headers_jd816'],
-      settings: [
-        { id: 'CFG_618_radomms_min', name: '最小随机等待 (毫秒)', val: 2000, type: 'text', desc: '在任务默认的等待时间基础上，再增加的随机等待时间！' },
-        { id: 'CFG_618_radomms_max', name: '最大随机等待 (毫秒)', val: 5000, type: 'text', desc: '在任务默认的等待时间基础上，再增加的随机等待时间！' },
-        { id: 'CFG_618_isSignShop', name: '商店签到', val: true, type: 'boolean', desc: '71 家商店, 如果每天都签不上, 可以关掉了! 默认: true' },
-        { id: 'CFG_618_isJoinBrand', name: '品牌会员', val: false, type: 'boolean', desc: '25 个品牌, 会自动加入品牌会员! 默认: true' },
-        { id: 'CFG_BOOM_times_JD618', name: '炸弹次数', val: 1, type: 'text', desc: '总共发送多少次炸弹! 默认: 1' },
-        { id: 'CFG_BOOM_interval_JD618', name: '炸弹间隔 (毫秒)', val: 100, type: 'text', desc: '每次间隔多少毫秒! 默认: 100' }
-      ],
-      author: '@chavyleung',
-      repo: 'https://github.com/chavyleung/scripts/tree/master/jd',
       icons: ['https://raw.githubusercontent.com/Orz-3/mini/master/jd.png', 'https://raw.githubusercontent.com/Orz-3/task/master/jd.png']
     },
     {
@@ -177,14 +104,6 @@ function getSystemApps() {
       author: '@chavyleung',
       repo: 'https://github.com/chavyleung/scripts/tree/master/videoqq',
       icons: ['https://raw.githubusercontent.com/Orz-3/mini/master/videoqq.png', 'https://raw.githubusercontent.com/Orz-3/task/master/videoqq.png']
-    },
-    {
-      id: 'V2EX',
-      name: 'V2EX',
-      keys: ['chavy_cookie_v2ex'],
-      author: '@chavyleung',
-      repo: 'https://github.com/chavyleung/scripts/tree/master/v2ex',
-      icons: ['https://raw.githubusercontent.com/Orz-3/mini/master/v2ex.png', 'https://raw.githubusercontent.com/Orz-3/task/master/v2ex.png']
     },
     {
       id: 'NeteaseMusic',
@@ -207,71 +126,12 @@ function getSystemApps() {
       icons: ['https://raw.githubusercontent.com/Orz-3/mini/master/wps.png', 'https://raw.githubusercontent.com/Orz-3/task/master/wps.png']
     },
     {
-      id: 'NoteYoudao',
-      name: '有道云笔记',
-      keys: ['chavy_signurl_noteyoudao', 'chavy_signbody_noteyoudao', 'chavy_signheaders_noteyoudao'],
-      author: '@chavyleung',
-      repo: 'https://github.com/chavyleung/scripts/tree/master/noteyoudao',
-      url: 'https://apps.apple.com/cn/app/有道云笔记-扫描王版/id450748070',
-      icons: ['https://raw.githubusercontent.com/Orz-3/mini/master/noteyoudao.png', 'https://raw.githubusercontent.com/Orz-3/task/master/noteyoudao.png'],
-      tasks: [{ cron: '3 0 * * *', script: 'noteyoudao.js' }],
-      rewrites: [{ type: 'request', pattern: '^https://note.youdao.com/yws/mapi/user?method=checkin', script: 'noteyoudao.cookie.js', body: true }]
-    },
-    {
       id: 'QTT',
       name: '趣头条',
       keys: ['senku_signKey_qtt', 'senku_signXTK_qtt', 'senku_readKey_qtt', 'senku_navCoinKey_qtt'],
       author: '@GideonSenku',
       repo: 'https://github.com/chavyleung/scripts/tree/master/qtt',
       icons: ['https://raw.githubusercontent.com/Orz-3/mini/master/qtt.png', 'https://raw.githubusercontent.com/Orz-3/task/master/qtt.png']
-    },
-    {
-      id: 'qmkg',
-      name: '全民K歌',
-      keys: ['senku_signurl_qmkg', 'senku_signheader_qmkg', 'senku_signbody_qmkg'],
-      author: '@GideonSenku',
-      repo: 'https://github.com/chavyleung/scripts/tree/master/qmkg',
-      icons: ['https://raw.githubusercontent.com/Orz-3/mini/master/qmkg.png', 'https://raw.githubusercontent.com/Orz-3/task/master/qmkg.png']
-    },
-    {
-      id: 'bcz',
-      name: '百词斩',
-      keys: ['senku_cookie_bcz', 'senku_key_bcz'],
-      author: '@GideonSenku',
-      repo: 'https://github.com/chavyleung/scripts/tree/master/bcz',
-      icons: ['https://raw.githubusercontent.com/Orz-3/mini/master/bcz.png', 'https://raw.githubusercontent.com/Orz-3/task/master/bcz.png']
-    },
-    {
-      id: 'zxhc',
-      name: '智行火车票',
-      keys: ['senku_signurl_zxhc', 'senku_signheader_zxhc', 'senku_signbody_zxhc'],
-      author: '@GideonSenku',
-      repo: 'https://github.com/chavyleung/scripts/tree/master/zxhc',
-      icons: ['https://raw.githubusercontent.com/Orz-3/mini/master/zxhc.png', 'https://raw.githubusercontent.com/Orz-3/task/master/zxhc.png']
-    },
-    {
-      id: 'fenqile',
-      name: '分期乐',
-      keys: ['senku_signurl_fenqile', 'senku_signheader_fenqile', 'senku_signbody_fenqile', 'senku_signDailyKey_fenqile', 'senku_signDailyUrlKey_fenqile'],
-      author: '@GideonSenku',
-      repo: 'https://github.com/chavyleung/scripts/tree/master/fenqile',
-      icons: ['https://raw.githubusercontent.com/Orz-3/mini/master/fenqile.png', 'https://raw.githubusercontent.com/Orz-3/task/master/fenqile.png']
-    },
-    {
-      id: 'fandeng',
-      name: '樊登读书',
-      keys: ['senku_signurl_pandeng', 'senku_signheader_pandeng', 'senku_signbody_pandeng'],
-      author: '@GideonSenku',
-      repo: 'https://github.com/chavyleung/scripts/tree/master/fandeng',
-      icons: ['https://raw.githubusercontent.com/Orz-3/mini/master/fandeng.png', 'https://raw.githubusercontent.com/Orz-3/task/master/fandeng.png']
-    },
-    {
-      id: 'dbsj',
-      name: '豆瓣时间',
-      keys: ['senku_signurl_dbsj', 'senku_signheader_dbsj', 'senku_signbody_dbsj'],
-      author: '@GideonSenku',
-      repo: 'https://github.com/chavyleung/scripts/tree/master/dbsj',
-      icons: ['https://raw.githubusercontent.com/Orz-3/mini/master/dbsj.png', 'https://raw.githubusercontent.com/Orz-3/task/master/dbsj.png']
     },
     {
       id: 'txnews',
@@ -297,8 +157,289 @@ function getSystemApps() {
       author: '@chavyleung',
       repo: 'https://github.com/chavyleung/scripts/blob/master/sfexpress',
       icons: ['https://raw.githubusercontent.com/Orz-3/mini/master/sfexpress.png', 'https://raw.githubusercontent.com/Orz-3/task/master/sfexpress.png']
-    }
-  ]
+    },
+    {
+      "id": "jd_fruit",
+      "name": "京东水果",
+      "keys": [
+          "CookieJD",
+          "jd_fruit_name",
+          "jd_fruit1",
+          "jd_fruit2",
+          "jd_fruit3",
+          "jd_fruit4"
+        ],
+      "settings": [
+            {
+              "id": "CookieJD",
+              "name": "CookieJD",
+              "val": "",
+              "type": "text",
+              "desc": "使用NobyDa的京东ck。"
+            },
+            {
+              "id": "jd_fruit_name",
+              "name": "京东账号昵称",
+              "val": "",
+              "type": "text",
+              "desc": "这里可以填你自己京东账号昵称,用于区分账号"
+            },
+            {
+              "id": "jd_fruit1",
+              "name": "互助码1",
+              "val": "",
+              "type": "text",
+              "desc": "京东水果互助码.这是别人的shareCode,你帮别人助力."
+            },
+            {
+              "id": "jd_fruit2",
+              "name": "互助码2",
+              "val": "",
+              "type": "text",
+              "desc": "京东水果互助码."
+            },
+            {
+              "id": "jd_fruit3",
+              "name": "互助码3",
+              "val": "",
+              "type": "text",
+              "desc": "京东水果互助码.这是别人的shareCode,你帮别人助力."
+            },
+            {
+              "id": "jd_fruit4",
+              "name": "互助码4",
+              "val": "",
+              "type": "text",
+              "desc": "京东水果互助码.这是别人的shareCode,你帮别人助力."
+            }
+            ],
+          "author": "@KuGouGo",
+          "repo": "https://github.com/KuGouGo/Ice-Boom/blob/master/Js/JD/jd_fruit.js",
+          "icons": [
+            "https://raw.githubusercontent.com/Orz-3/task/master/jd.png",
+            "https://raw.githubusercontent.com/Orz-3/task/master/jd.png"
+          ]
+        },
+        {
+          "id": "jd_pet",
+            "name": "京东萌宠",
+            "keys": [
+              "CookieJD",
+              "jd_pet_name",
+              "jd_pet1",
+              "jd_pet2",
+              "jd_pet3",
+              "jd_pet4",
+              "jd_pet5"
+            ],
+            "settings": [
+              {
+                "id": "CookieJD",
+                "name": "CookieJD",
+                "val": "",
+                "type": "text",
+                "desc": "使用NobyDa的京东ck。"
+              },
+              {
+                "id": "jd_pet_name",
+                "name": "京东账号昵称",
+                "val": "",
+                "type": "text",
+                "desc": "这里可以填你自己京东账号昵称,用于区分账号"
+              },
+              {
+                "id": "jd_pet1",
+                "name": "互助码1",
+                "val": "",
+                "type": "text",
+                "desc": "东东萌宠互助码.这是别人的shareCode,你帮别人助力."
+              },
+              {
+                "id": "jd_pet2",
+                "name": "互助码2",
+                "val": "",
+                "type": "text",
+                "desc": "东东萌宠互助码.这是别人的shareCode,你帮别人助力."
+              },
+              {
+                "id": "jd_pet3",
+                "name": "互助码3",
+                "val": "",
+                "type": "text",
+                "desc": "东东萌宠互助码.这是别人的shareCode,你帮别人助力."
+              },
+              {
+                "id": "jd_pet4",
+                "name": "互助码4",
+                "val": "",
+                "type": "text",
+                "desc": "东东萌宠互助码.这是别人的shareCode,你帮别人助力."
+              },
+              {
+                "id": "jd_pet5",
+                "name": "互助码5",
+                "val": "",
+                "type": "text",
+                "desc": "东东萌宠互助码.这是别人的shareCode,你帮别人助力."
+              }
+          ],
+          "author": "@KuGouGo",
+          "repo": "https://github.com/KuGouGo/Ice-Boom/blob/master/Js/JD/jd_pet.js",
+          "icons": [
+            "https://raw.githubusercontent.com/znz1992/Gallery/master/jdmc.png",
+            "https://raw.githubusercontent.com/znz1992/Gallery/master/jdmc.png"
+          ]
+        },
+        {
+          "id": "KuGouGo.suning",
+          "name": "苏宁易购",
+          "keys": ["KuGouGo_login_url_suning", "KuGouGo_login_body_suning", "KuGouGo_login_header_suning", "KuGouGo_sign_url_suning", "KuGouGo_sign_header_suning", "KuGouGo_signweb_url_suning", "snyg_userTokenKey", "KuGouGo_signweb_header_suning", "KuGouGo_signgame_url_suning", "KuGouGo_signgame_header_suning", "KuGouGo_signgetgame_url_suning", "KuGouGo_signgetgame_header_suning"],
+          "author": "@KuGouGo",
+          "repo": "https://github.com/KuGouGo/Ice-Boom/blob/master/Js/suning/suning.js",
+          "icons": ["https://raw.githubusercontent.com/Orz-3/mini/master/suning.png", "https://raw.githubusercontent.com/Orz-3/task/master/suning.png"]
+        },
+        {
+          "id": "KuGouGo.bilibili.live",
+          "name": "bilibili直播",
+          "keys": ["KuGouGo_cookie_bilibili"],
+          "author": "@KuGouGo",
+          "repo": "https://github.com/KuGouGo/Ice-Boom/blob/master/Js/bilibili/bilibili.js",
+          "icons": ["https://raw.githubusercontent.com/Orz-3/mini/master/bilibili.png", "https://raw.githubusercontent.com/Orz-3/task/master/bilibili.png"]
+        },
+        {
+          "id": "KuGouGo.meituan",
+          "name": "美团",
+          "keys": ["KuGouGo_tokenurl_meituan", "KuGouGo_tokenheader_meituan", "KuGouGo_signurl_meituan", "KuGouGo_signheader_meituan", "KuGouGo_signbody_meituan"],
+          "author": "@KuGouGo",
+          "repo": "https://github.com/KuGouGo/Ice-Boom/blob/master/Js/meituan/meituan.js",
+          "icons": ["https://raw.githubusercontent.com/Orz-3/mini/master/meituan.png", "https://raw.githubusercontent.com/Orz-3/task/master/meituan.png"]
+        },
+        {
+          "id": "jd_plantBean",
+          "name": "京东种豆",
+          "keys": [
+            "CookieJD",
+            "jd_plant_bean_name",
+            "jd_plantBean1",
+            "jd_plantBean2",
+            "jd_plantBean3"
+          ],
+          "settings": [
+            {
+              "id": "CookieJD",
+              "name": "CookieJD",
+              "val": "",
+              "type": "text",
+              "desc": "使用NobyDa的京东ck。"
+            },
+            {
+              "id": "jd_plant_bean_name",
+              "name": "京东账号昵称",
+              "val": "",
+              "type": "text",
+              "desc": "这里可以填你自己京东账号昵称,用于区分账号"
+            },
+            {
+              "id": "jd_plantBean1",
+              "name": "互助码1",
+              "val": "",
+              "type": "text",
+              "desc": "种豆得豆互助码.这是别人的助力码,你帮别人助力."
+            },
+            {
+              "id": "jd_plantBean2",
+              "name": "互助码2",
+              "val": "",
+              "type": "text",
+              "desc": "种豆得豆互助码.这是别人的助力码,你帮别人助力."
+            },
+            {
+              "id": "jd_plantBean3",
+              "name": "互助码3",
+              "val": "",
+              "type": "text",
+              "desc": "种豆得豆互助码.这是别人的助力码,你帮别人助力."
+            }
+          ],
+          "author": "@KuGouGo",
+          "repo": "https://github.com/KuGouGo/Ice-Boom/blob/master/Js/JD/jd_plantBean.js",
+          "icons": [
+            "https://raw.githubusercontent.com/znz1992/Gallery/master/jdzd.png",
+            "https://raw.githubusercontent.com/znz1992/Gallery/master/jdzd.png"
+          ]
+          },
+          {
+            "id": "lk.weiboST",
+            "name": "微博超话",
+            "keys": ["lkWeiboSTSignHeaderKey", "lkUserFollowSTKey"],
+            "settings": [
+              {
+                "id": "lkIsEnableLogWeiboST",
+                "name": "开启/关闭日志（签到脚本）",
+                "val": true,
+                "type": "boolean",
+                "desc": "默认开启"
+            },
+            {
+              "id": "lkIsEnableLogWeiboSTCookie",
+              "name": "开启/关闭日志（获取Cookie脚本）",
+              "val": true,
+              "type": "boolean",
+              "desc": "默认开启"
+            },
+            {
+              "id": "lkIsClearCookie",
+              "name": "开启/关闭删除Cookie",
+              "val": false,
+              "type": "boolean",
+              "desc": "默认关闭"
+            },
+            {
+              "id": "lkWeiboSTSignHeaderKey",
+              "name": "Cookie",
+              "val": "",
+              "type": "text",
+              "desc": "Cookie"
+            },
+            {
+              "id": "lkUserFollowSTKey",
+              "name": "需要签到的超话列表",
+              "val": "",
+              "type": "text",
+              "desc": "需要签到的超话列表"
+            },
+            {
+              "id": "lkIsEnableGetCookieWeiboST",
+              "name": "开启/关闭获取Cookie",
+              "val": true,
+              "type": "boolean",
+              "desc": "默认开启"
+            }
+           ],
+          "author": "@KuGouGo",
+          "repo": "https://github.com/KuGouGo/Ice-Boom/blob/master/Js/weibo/weiboST.js",
+          "icons": [
+            "https://raw.githubusercontent.com/Orz-3/mini/master/weibo.png",
+            "https://raw.githubusercontent.com/Orz-3/task/master/weibo.png"
+          ]
+         },
+         {
+           "id": "weibo",
+           "name": "新浪微博",
+           "keys": ["sy.signurl.wb", "sy_signheader_wb", "sy_payheader_wb", "sy_token_wb"],
+           "author": "@KuGouGo",
+           "repo": "https://github.com/KuGouGo/Ice-Boom/blob/master/Js/weibo/weibo.js",
+           "icons": ["https://raw.githubusercontent.com/Orz-3/mini/master/weibo.png", "https://raw.githubusercontent.com/Orz-3/task/master/weibo.png"]
+         },
+         {
+           "id": "youth",
+           "name": "中青看点",
+           "keys": ["youthheader_zq", "read_zq", "red_zq", "readtime_zq"],
+           "author": "@KuGouGo",
+           "repo": "https://github.com/KuGouGo/Ice-Boom/blob/master/Js/zqkd/youth.js",
+           "icons": ["https://raw.githubusercontent.com/Orz-3/mini/master/youth.png", "https://raw.githubusercontent.com/Orz-3/task/master/youth.png"]
+         }
+      ]
   sysapps.sort((a, b) => a.id.localeCompare(b.id))
   wrapapps(sysapps)
   return sysapps
@@ -1611,7 +1752,7 @@ function printHtml(data, curapp = null, curview = 'app') {
       </script>
     </body>
   </html>
-  
+
   `
 }
 
