@@ -8,9 +8,10 @@
 
 
 ### 远程配置：
+
 * [视频教程](https://youtu.be/tr5aji82Vks)
 
-* 挂载[视频教程](https://youtu.be/tr5aji82Vks)
+* [挂载视频教程](https://youtu.be/tr5aji82Vks)
 
 * [Js.conf](https://raw.githubusercontent.com/KuGouGo/Ice-Boom/master/Js.conf) 脚本订阅.
 
