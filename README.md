@@ -9,15 +9,13 @@
 
 ### 远程配置：
 
-* [视频教程](https://youtu.be/tr5aji82Vks)
-
 * [挂载视频教程](https://youtu.be/tr5aji82Vks)
 
-* [Js.conf](https://raw.githubusercontent.com/KuGouGo/Ice-Boom/master/Js.conf) 脚本订阅.
+* [脚本订阅.](https://raw.githubusercontent.com/KuGouGo/Ice-Boom/master/Js.conf)
 
-* [Cookie.conf](https://raw.githubusercontent.com/KuGouGo/Ice-Boom/master/Cookies.conf) 获取Cookie远程订阅,仅在Cookie获取或失效时启用,不需要时右滑动禁用.
+* [Cookie远程订阅](https://raw.githubusercontent.com/KuGouGo/Ice-Boom/master/Cookies.conf)
 
-* [Task.conf](https://raw.githubusercontent.com/KuGouGo/Ice-Boom/master/Task.conf) 定时任务配置,目前无法订阅,请手动根据个人需求复制内容及修改时间.
+* [定时任务配置](https://raw.githubusercontent.com/KuGouGo/Ice-Boom/master/Task.conf)
 
 
 ## 免责声明：
