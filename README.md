@@ -11,11 +11,11 @@
 
 * [远程挂载教程](https://youtu.be/tr5aji82Vks)
 
-* [脚本远程订阅](https://raw.githubusercontent.com/KuGouGo/Ice-Boom/master/Js.conf)
+* [脚本远程订阅](https://raw.githubusercontent.com/KuGouGo/Star/master/Js.conf)
 
-* [Cookie远程订阅](https://raw.githubusercontent.com/KuGouGo/Ice-Boom/master/Cookies.conf)
+* [Cookie远程订阅](https://raw.githubusercontent.com/KuGouGo/Star/master/Cookies.conf)
 
-* [定时任务配置](https://raw.githubusercontent.com/KuGouGo/Ice-Boom/master/Task.conf)
+* [定时任务配置](https://raw.githubusercontent.com/KuGouGo/Star/master/Task.conf)
 
 
 ## 免责声明：
